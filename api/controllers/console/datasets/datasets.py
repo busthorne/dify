@@ -616,7 +616,6 @@ class DatasetRetrievalSettingApi(Resource):
                 | VectorType.TIDB_VECTOR
                 | VectorType.CHROMA
                 | VectorType.TENCENT
-                | VectorType.PGVECTO_RS
                 | VectorType.BAIDU
                 | VectorType.VIKINGDB
             ):
@@ -630,6 +629,7 @@ class DatasetRetrievalSettingApi(Resource):
                 | VectorType.ORACLE
                 | VectorType.ELASTICSEARCH
                 | VectorType.PGVECTOR
+                | VectorType.PGVECTO_RS
             ):
                 return {
                     "retrieval_method": [

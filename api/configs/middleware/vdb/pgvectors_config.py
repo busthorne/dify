@@ -33,3 +33,13 @@ class PGVectoRSConfig(BaseSettings):
         description="Name of the PostgreSQL database with PGVecto.RS extension to connect to",
         default=None,
     )
+
+    PGVECTO_RS_MIN_CONNECTIONS: int = Field(
+        description="Minimum size of the database connection pool",
+        default=1,
+    )
+
+    PGVECTO_RS_MAX_CONNECTIONS: int = Field(
+        description="Maximum size of the database connection pool",
+        default=20,
+    )
